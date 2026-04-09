@@ -26,7 +26,7 @@ const products = [
     proLabel: 'Pro',
     proFeatures: 'Unlimited • Priority support • Templates',
     cta: 'Launch Resume Tool',
-    ctaHref: '#',
+    ctaHref: 'https://resume.opsiflo.com',
   },
   {
     id: 'linkedin',
@@ -48,7 +48,7 @@ const products = [
     proLabel: 'VIP',
     proFeatures: 'Unlimited posts • Analytics • DM templates',
     cta: 'Launch LinkedIn Tool',
-    ctaHref: '#',
+    ctaHref: 'https://linkedin.opsiflo.com',
   },
   {
     id: 'email',
@@ -70,7 +70,7 @@ const products = [
     proLabel: 'Pro',
     proFeatures: 'Unlimited • Custom domains • CRM sync',
     cta: 'Launch Email Tool',
-    ctaHref: '#',
+    ctaHref: 'https://email.opsiflo.com',
   },
 ];
 
