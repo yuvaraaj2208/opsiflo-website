@@ -9,6 +9,9 @@ import Blog from '@/components/Blog';
 import FAQ from '@/components/FAQ';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
+import Pricing from '@/components/Pricing';
+
+// Add <Pricing /> after <Products /> in the JSX
 
 export default function Home() {
   return (
