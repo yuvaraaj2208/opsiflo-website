@@ -1,16 +1,18 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, FileText, Linkedin, Mail, Sparkles, TrendingUp, Users } from 'lucide-react';
+import { ArrowRight, FileText, Linkedin, Mail, Sparkles, TrendingUp, Brain, Users } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 
 const stats = [
+  { icon: Brain, value: '5K+', label: 'Members Learning', color: 'from-amber-500 to-orange-500' },
   { icon: FileText, value: '10K+', label: 'Resumes Optimized', color: 'from-blue-500 to-cyan-500' },
   { icon: TrendingUp, value: '50K+', label: 'Profiles Grown', color: 'from-violet-500 to-purple-500' },
   { icon: Mail, value: '100K+', label: 'Emails Sent', color: 'from-pink-500 to-rose-500' },
 ];
 
 const products = [
+  { label: 'AI Mastery', href: '#products', icon: Brain, color: 'from-amber-500 to-orange-500' },
   { label: 'Resume Tool', href: '#products', icon: FileText, color: 'from-blue-500 to-cyan-500' },
   { label: 'LinkedIn Tool', href: '#products', icon: Linkedin, color: 'from-violet-500 to-purple-500' },
   { label: 'Email Tool', href: '#products', icon: Mail, color: 'from-pink-500 to-rose-500' },
@@ -79,19 +81,24 @@ export default function Hero() {
           for Professionals
         </motion.h1>
 
-        {/* Subheadline */}
+        {/* Subheadline — updated for all 4 products */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10 text-balance"
         >
-          Optimize your <span className="text-gray-900 dark:text-white font-semibold">Resume</span>.{' '}
-          Grow your <span className="text-gray-900 dark:text-white font-semibold">LinkedIn</span>.{' '}
-          Scale your <span className="text-gray-900 dark:text-white font-semibold">Hiring</span>.
+          Master{' '}
+          <span className="text-gray-900 dark:text-white font-semibold">AI</span>.{' '}
+          Optimize your{' '}
+          <span className="text-gray-900 dark:text-white font-semibold">Resume</span>.{' '}
+          Grow your{' '}
+          <span className="text-gray-900 dark:text-white font-semibold">LinkedIn</span>.{' '}
+          Scale your{' '}
+          <span className="text-gray-900 dark:text-white font-semibold">Outreach</span>.
         </motion.p>
 
-        {/* Product buttons */}
+        {/* Product buttons — now 4 */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -126,12 +133,12 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* Stats */}
+        {/* Stats — 4 cards */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto"
         >
           {stats.map((stat, i) => (
             <motion.div
@@ -139,13 +146,13 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
-              className="card-glass p-6 rounded-2xl text-center group hover:scale-105 transition-all duration-300"
+              className="card-glass p-5 rounded-2xl text-center group hover:scale-105 transition-all duration-300"
             >
               <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${stat.color} mb-3 group-hover:scale-110 transition-transform duration-200`}>
-                <stat.icon className="w-6 h-6 text-white" />
+                <stat.icon className="w-5 h-5 text-white" />
               </div>
-              <div className="text-3xl font-black text-gray-900 dark:text-white">{stat.value}</div>
-              <div className="text-sm text-gray-500 dark:text-gray-400 font-medium">{stat.label}</div>
+              <div className="text-2xl font-black text-gray-900 dark:text-white">{stat.value}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400 font-medium mt-0.5">{stat.label}</div>
             </motion.div>
           ))}
         </motion.div>
