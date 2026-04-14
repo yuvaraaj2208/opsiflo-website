@@ -10,7 +10,6 @@ const links = {
     { label: 'Resume Optimizer', href: 'https://resume.opsiflo.com' },
     { label: 'LinkedIn Growth', href: 'https://linkedin.opsiflo.com' },
     { label: 'Email Campaign', href: 'https://email.opsiflo.com' },
-    { label: 'Pricing', href: '#pricing' },
   ],
   Services: [
     { label: 'Resume Optimization', href: '#services' },
