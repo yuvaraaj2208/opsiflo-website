@@ -6,10 +6,11 @@ import { Zap, Twitter, Linkedin, Github, Instagram, ArrowRight, Mail, CheckCircl
 
 const links = {
   Products: [
-    { label: 'Resume Optimizer', href: '#products' },
-    { label: 'LinkedIn Growth', href: '#products' },
-    { label: 'Email Campaign', href: '#products' },
-    { label: 'Pricing', href: '#products' },
+    { label: 'AI Mastery', href: 'https://mastery.opsiflo.com' },
+    { label: 'Resume Optimizer', href: 'https://resume.opsiflo.com' },
+    { label: 'LinkedIn Growth', href: 'https://linkedin.opsiflo.com' },
+    { label: 'Email Campaign', href: 'https://email.opsiflo.com' },
+    { label: 'Pricing', href: '#pricing' },
   ],
   Services: [
     { label: 'Resume Optimization', href: '#services' },
